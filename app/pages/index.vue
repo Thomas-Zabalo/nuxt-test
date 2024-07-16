@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="l-content">
         <h2>Home</h2>
         <p>Nostrud occaecat fugiat excepteur eiusmod laboris incididunt non veniam. Proident Lorem excepteur cillum sunt
             commodo esse. Lorem ad sunt non quis laboris sint excepteur ex ullamco. Ex pariatur ex aute sint Lorem magna
@@ -80,6 +80,13 @@
 </script>
 
 <style scoped>
+.l-content {
+    max-inline-size: 800px;
+    padding-inline: 32px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
