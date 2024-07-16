@@ -1,13 +1,20 @@
-<template>
-    <div>
+<template class="l-body">
+    <div class="bg-slate-900">
         <Header />
         <!-- Page content -->
-        <div class="container mx-auto p-4">
+        <div class="l-content mx-auto max-w-3xl">
             <slot />
         </div>
     </div>
 </template>
 
-<style>
 
+<style>
+.l-body {
+    margin-inline: 64px;
+}
+
+.l-main {
+    margin-block-start: 64px;
+}
 </style>
