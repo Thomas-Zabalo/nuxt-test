@@ -1,29 +1,15 @@
 <template>
     <div>
-        <h2>Product</h2>
-        <p>Nostrud occaecat fugiat excepteur eiusmod laboris incididunt non veniam. Proident Lorem excepteur cillum sunt
-            commodo esse. Lorem ad sunt non quis laboris sint excepteur ex ullamco. Ex pariatur ex aute sint Lorem magna
-            est do ad aliquip ullamco fugiat qui. Ut reprehenderit nisi amet veniam adipisicing reprehenderit excepteur
-            incididunt adipisicing id do ex veniam cillum. Culpa id velit esse amet nulla. Ullamco elit ullamco do ipsum
-            elit nisi ipsum id amet incididunt eu anim enim ut.
-        </p>
-        <p>Nostrud occaecat fugiat excepteur eiusmod laboris incididunt non veniam. Proident Lorem excepteur cillum sunt
-            commodo esse. Lorem ad sunt non quis laboris sint excepteur ex ullamco. Ex pariatur ex aute sint Lorem magna
-            est do ad aliquip ullamco fugiat qui. Ut reprehenderit nisi amet veniam adipisicing reprehenderit excepteur
-            incididunt adipisicing id do ex veniam cillum. Culpa id velit esse amet nulla. Ullamco elit ullamco do ipsum
-            elit nisi ipsum id amet incididunt eu anim enim ut.
-        </p>
+        <div class="grid grid-col-4 gap-5">
+            <div v-for="p in products">
+                <NuxtLink :to="`/products/${p.id}`">{{ p.title }}</NuxtLink>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-definePageMeta({
-    layout: 'product'
-})
-
-await useFetch('https://fakestoreapi.com/products')
-
-window
+const { data: products } = await useFetch('https://fakestoreapi.com/products')
 </script>
 
 <style scoped>
@@ -36,3 +22,4 @@ p {
     margin: 20px 0;
 }
 </style>
+import type { NuxtLink } from '#build/components';
