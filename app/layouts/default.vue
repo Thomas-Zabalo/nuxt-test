@@ -2,14 +2,19 @@
     <div class="bg-slate-900">
         <Header />
         <!-- Page content -->
-        <div class="l-content mx-auto max-w-3xl">
+        <div class="l-main mx-auto max-w-5xl">
             <slot />
         </div>
+        <Footer />
     </div>
 </template>
 
 
 <style>
+body {
+    color: white;
+}
+
 .l-body {
     margin-inline: 64px;
 }
