@@ -1,7 +1,7 @@
 <template>
     <div>
         <header
-            class="bg-slate-800 backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50">
+            class="bg-slate-800 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 -mb-px fixed top-0 z-50">
             <nav class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex items-center justify-between gap-3 h-16">
                 <div class="lg:flex-1 flex items-center gap-1.5">
                     <NuxtLink to="/"
@@ -38,7 +38,8 @@
                         class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-2 px-3 py-2 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-700 dark:text-gray-200 bg-gray-50 hover:bg-gray-100 disabled:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700/50 dark:disabled:bg-gray-800 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center"
                         to="/">
                         <span class="">Get started</span>
-                        <icon name="i-heroicons-arrow-right-20-solid" class="flex-shrink-0 h-5 w-5" aria-hidden="true" />
+                        <icon name="i-heroicons-arrow-right-20-solid" class="flex-shrink-0 h-5 w-5"
+                            aria-hidden="true" />
                     </NuxtLink>
                 </div>
             </nav>
@@ -50,4 +51,8 @@
 
 </script>
 
-<style scoped></style>
+<style scoped>
+header{
+    width: -webkit-fill-available;
+}
+</style>
