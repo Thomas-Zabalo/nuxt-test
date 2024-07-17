@@ -8,9 +8,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "commit": "cz" 
+    "commit": "cz"
   },
   "dependencies": {
+    "@nuxt/icon": "^1.1.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.12.3",
     "vue": "latest"
