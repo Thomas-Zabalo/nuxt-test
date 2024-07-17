@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-// Call props an array
+// Call props as array
 const { product } = defineProps(['product'])
 </script>
 
