@@ -11,7 +11,7 @@
     "commit": "cz"
   },
   "dependencies": {
-    "@nuxt/icon": "^1.1.1",
+    "@nuxt/icon": "^1.4.5",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.12.3",
     "vue": "latest"
